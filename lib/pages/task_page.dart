@@ -28,7 +28,6 @@ class TaskPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Header Tasks
             Text(
               'Tugas Terdekat',
               style: TextStyle(
@@ -46,15 +45,13 @@ class TaskPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-
-            // To-Do List Grid View
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, // Number of columns
-                  childAspectRatio: 0.8, // Aspect ratio for cards (adjusted)
-                  crossAxisSpacing: 16, // Spacing between columns
-                  mainAxisSpacing: 16, // Spacing between rows
+                  crossAxisCount: 2,
+                  childAspectRatio: 0.8,
+                  crossAxisSpacing: 16,
+                  mainAxisSpacing: 16,
                 ),
                 itemCount: todoList.length,
                 itemBuilder: (context, index) {
@@ -65,19 +62,19 @@ class TaskPage extends StatelessWidget {
                     elevation: 5,
                     color: Colors.white,
                     child: Padding(
-                      padding: const EdgeInsets.all(12.0), // Adjusted padding
+                      padding: const EdgeInsets.all(12.0),
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Use space evenly
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           Icon(
                             Icons.assignment,
                             color: Colors.orange.shade700,
-                            size: 40, // Reduced icon size for better fit
+                            size: 40,
                           ),
                           Text(
                             todoList[index]['task']!,
                             style: TextStyle(
-                              fontSize: 16, // Reduced font size for task title
+                              fontSize: 16,
                               fontWeight: FontWeight.w600,
                               color: Colors.black87,
                             ),
@@ -86,7 +83,7 @@ class TaskPage extends StatelessWidget {
                           Text(
                             'Deadline: ${todoList[index]['deadline']}',
                             style: TextStyle(
-                              fontSize: 12, // Reduced font size for deadline
+                              fontSize: 12,
                               color: Colors.grey[700],
                             ),
                           ),
