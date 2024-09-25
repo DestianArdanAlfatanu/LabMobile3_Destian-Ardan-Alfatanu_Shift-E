@@ -17,18 +17,17 @@ class DashboardPage extends StatelessWidget {
         title: Text(
           'Jadwal Hari Ini',
           style: TextStyle(
-            fontSize: 24, // Adjusted font size for mobile
+            fontSize: 24,
             fontWeight: FontWeight.bold,
           ),
         ),
         backgroundColor: Colors.green.shade700,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(8.0), // Reduced padding for mobile
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Welcome Message
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
@@ -38,14 +37,14 @@ class DashboardPage extends StatelessWidget {
                   end: Alignment.bottomRight,
                 ),
               ),
-              padding: EdgeInsets.all(12), // Reduced padding
+              padding: EdgeInsets.all(12),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     'Selamat Datang!',
                     style: TextStyle(
-                      fontSize: 20, // Adjusted font size
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
                     ),
@@ -54,7 +53,7 @@ class DashboardPage extends StatelessWidget {
                   Text(
                     'Kamis, 26 September 2024',
                     style: TextStyle(
-                      fontSize: 16, // Adjusted font size
+                      fontSize: 16,
                       color: Colors.white70,
                     ),
                   ),
@@ -62,26 +61,22 @@ class DashboardPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-
-            // Today's Schedule Header
             Text(
               'Jadwal Hari Ini',
               style: TextStyle(
-                fontSize: 22, // Adjusted font size
+                fontSize: 22,
                 fontWeight: FontWeight.bold,
                 color: Colors.green.shade700,
               ),
             ),
             SizedBox(height: 10),
-
-            // Schedule List
             Expanded(
               child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2,
                   mainAxisSpacing: 10,
                   crossAxisSpacing: 10,
-                  childAspectRatio: 1.2, // Adjusted aspect ratio for better fit
+                  childAspectRatio: 1.2,
                 ),
                 itemCount: todaySchedule.length,
                 itemBuilder: (context, index) {
@@ -91,24 +86,24 @@ class DashboardPage extends StatelessWidget {
                     ),
                     elevation: 5,
                     child: Padding(
-                      padding: const EdgeInsets.all(12), // Reduced padding
+                      padding: const EdgeInsets.all(12),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           CircleAvatar(
-                            radius: 25, // Adjusted size for mobile
+                            radius: 25,
                             backgroundColor: Colors.orange.shade700,
                             child: Icon(
                               Icons.event,
                               color: Colors.white,
-                              size: 24, // Adjusted icon size
+                              size: 24,
                             ),
                           ),
-                          SizedBox(height: 8), // Reduced space
+                          SizedBox(height: 8),
                           Text(
                             todaySchedule[index]['event']!,
                             style: TextStyle(
-                              fontSize: 16, // Adjusted font size
+                              fontSize: 16,
                               color: Colors.black87,
                               fontWeight: FontWeight.w600,
                             ),
@@ -118,7 +113,7 @@ class DashboardPage extends StatelessWidget {
                             todaySchedule[index]['time']!,
                             style: TextStyle(
                               color: Colors.grey[700],
-                              fontSize: 14, // Adjusted font size
+                              fontSize: 14,
                             ),
                           ),
                         ],
@@ -131,7 +126,7 @@ class DashboardPage extends StatelessWidget {
           ],
         ),
       ),
-      drawer: SideMenu(), // Drawer with SideMenu
+      drawer: SideMenu(),
     );
   }
 }
