@@ -132,7 +132,7 @@ class AboutPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 10), // Adding a little space before version
+              SizedBox(height: 10),
               Center(
                 child: Text(
                   'Version: 25.09.24',
