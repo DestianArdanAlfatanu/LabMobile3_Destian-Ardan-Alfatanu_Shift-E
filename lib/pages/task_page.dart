@@ -37,11 +37,25 @@ class TaskPage extends StatelessWidget {
                 color: Colors.green.shade700,
               ),
             ),
+            SizedBox(height: 10),
+            Text(
+              'Daftar tugas yang perlu segera diselesaikan.',
+              style: TextStyle(
+                fontSize: 16,
+                color: Colors.grey[600],
+              ),
+            ),
             SizedBox(height: 20),
 
-            // To-Do List
+            // To-Do List Grid View
             Expanded(
-              child: ListView.builder(
+              child: GridView.builder(
+                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2, // Number of columns
+                  childAspectRatio: 0.8, // Aspect ratio for cards (adjusted)
+                  crossAxisSpacing: 16, // Spacing between columns
+                  mainAxisSpacing: 16, // Spacing between rows
+                ),
                 itemCount: todoList.length,
                 itemBuilder: (context, index) {
                   return Card(
@@ -49,32 +63,34 @@ class TaskPage extends StatelessWidget {
                       borderRadius: BorderRadius.circular(15),
                     ),
                     elevation: 5,
-                    margin: EdgeInsets.symmetric(vertical: 10),
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.assignment,
-                        color: Colors.orange.shade700, // Warna ikon oranye
-                        size: 30,
-                      ),
-                      title: Text(
-                        todoList[index]['task']!,
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.black87,
-                        ),
-                      ),
-                      subtitle: Text(
-                        'Deadline: ${todoList[index]['deadline']}',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.grey[700],
-                        ),
-                      ),
-                      trailing: Icon(
-                        Icons.check_circle_outline,
-                        color: Colors.green.shade600,
-                        size: 30,
+                    color: Colors.white,
+                    child: Padding(
+                      padding: const EdgeInsets.all(12.0), // Adjusted padding
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Use space evenly
+                        children: [
+                          Icon(
+                            Icons.assignment,
+                            color: Colors.orange.shade700,
+                            size: 40, // Reduced icon size for better fit
+                          ),
+                          Text(
+                            todoList[index]['task']!,
+                            style: TextStyle(
+                              fontSize: 16, // Reduced font size for task title
+                              fontWeight: FontWeight.w600,
+                              color: Colors.black87,
+                            ),
+                          ),
+                          SizedBox(height: 4),
+                          Text(
+                            'Deadline: ${todoList[index]['deadline']}',
+                            style: TextStyle(
+                              fontSize: 12, // Reduced font size for deadline
+                              color: Colors.grey[700],
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   );
