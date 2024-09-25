@@ -21,7 +21,6 @@ class ProfilePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Profile Header
               Center(
                 child: Text(
                   'My Profile',
@@ -33,8 +32,6 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-
-              // User Avatar
               Center(
                 child: CircleAvatar(
                   radius: 60,
@@ -47,8 +44,6 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-
-              // User Information Card
               Card(
                 elevation: 4,
                 child: Padding(
@@ -64,8 +59,6 @@ class ProfilePage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-
-              // Edit Profile Button
               Center(
                 child: ElevatedButton.icon(
                   onPressed: () {
@@ -97,7 +90,6 @@ class ProfilePage extends StatelessWidget {
   }
 }
 
-// Custom Widget for User Information Row
 class InfoRow extends StatelessWidget {
   final String title;
   final String value;
