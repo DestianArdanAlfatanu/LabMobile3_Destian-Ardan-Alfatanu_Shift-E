@@ -63,21 +63,27 @@ Mengambil status login dari SharedPreferences untuk mengetahui apakah pengguna s
 SCREENSHOTS APLIKASI
 
 //Login_Page.dart
+
 ![image](https://github.com/user-attachments/assets/09e18c80-295d-4c86-be24-02caac21d362)
 
 //Dashboard_Page.dart
+
 ![image](https://github.com/user-attachments/assets/f668683e-299a-40df-8935-e77628375248)
 
 //Profile_Page.dart
+
 ![image](https://github.com/user-attachments/assets/b31d6655-15f8-46ee-9e15-e8a9a3847b07)
 
 //Task_Page.dart
+
 ![image](https://github.com/user-attachments/assets/9d875489-6bdf-4f66-9601-dd438c04fc6a)
 
 //About_Page.dart
+
 ![image](https://github.com/user-attachments/assets/60746b9a-85d0-444b-b33f-f145aaf8e274)
 
 //Sidemenu.dart
+
 ![image](https://github.com/user-attachments/assets/0fe87973-1aa6-449b-8722-84f434e20ae9)
 
 
