@@ -29,7 +29,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.green.shade50,
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(16.0), // Consistent padding for all sides
+          padding: const EdgeInsets.all(16.0),
           child: SingleChildScrollView(
             child: Container(
               decoration: BoxDecoration(
@@ -40,16 +40,15 @@ class _LoginPageState extends State<LoginPage> {
                     color: Colors.grey.withOpacity(0.2),
                     spreadRadius: 5,
                     blurRadius: 10,
-                    offset: Offset(0, 3), // changes position of shadow
+                    offset: Offset(0, 3),
                   ),
                 ],
               ),
               child: Padding(
-                padding: const EdgeInsets.all(20.0), // Inner padding
+                padding: const EdgeInsets.all(20.0),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    // Avatar
                     CircleAvatar(
                       radius: 50,
                       backgroundColor: Colors.orange.shade700,
@@ -60,8 +59,6 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(height: 20),
-
-                    // Welcome Text
                     Text(
                       'Selamat Datang!',
                       style: TextStyle(
@@ -81,8 +78,6 @@ class _LoginPageState extends State<LoginPage> {
                       textAlign: TextAlign.center,
                     ),
                     SizedBox(height: 30),
-
-                    // Username TextField
                     TextField(
                       controller: _usernameController,
                       decoration: InputDecoration(
@@ -106,8 +101,6 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                     ),
                     SizedBox(height: 20),
-
-                    // Password TextField
                     TextField(
                       controller: _passwordController,
                       decoration: InputDecoration(
@@ -132,8 +125,6 @@ class _LoginPageState extends State<LoginPage> {
                       obscureText: true,
                     ),
                     SizedBox(height: 30),
-
-                    // Login Button
                     ElevatedButton(
                       onPressed: _login,
                       style: ElevatedButton.styleFrom(
