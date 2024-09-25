@@ -13,13 +13,12 @@ class SideMenu extends StatelessWidget {
     return Drawer(
       child: Column(
         children: [
-          // Drawer Header dengan tampilan yang lebih menarik
           UserAccountsDrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.green.shade700, // Warna tema hijau
+              color: Colors.green.shade700,
             ),
             currentAccountPicture: CircleAvatar(
-              backgroundImage: AssetImage('assets/user.jpg'), // Placeholder foto pengguna
+              backgroundImage: AssetImage('assets/user.jpg'),
               backgroundColor: Colors.white,
             ),
             accountName: Text(
@@ -27,16 +26,14 @@ class SideMenu extends StatelessWidget {
               style: TextStyle(
                 fontSize: 18,
                 fontWeight: FontWeight.bold,
-                color: Colors.white, 
+                color: Colors.white,
               ),
             ),
             accountEmail: Text(
               'destian.alfatanu@mhs.unsoed.ac.id',
-              style: TextStyle(fontSize: 16, color: Colors.white), 
+              style: TextStyle(fontSize: 16, color: Colors.white),
             ),
           ),
-
-          // List Menu dengan ikon dan animasi ketika di-tap
           Expanded(
             child: ListView(
               children: <Widget>[
@@ -71,8 +68,6 @@ class SideMenu extends StatelessWidget {
               ],
             ),
           ),
-
-          
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: ListTile(
