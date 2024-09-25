@@ -7,10 +7,7 @@ import 'package:tugas3/pages/task_page.dart';
 import 'package:tugas3/pages/about_page.dart';
 
 void main() async {
-  // Initialize WidgetsFlutterBinding to ensure shared preferences is ready
   WidgetsFlutterBinding.ensureInitialized();
-
-  // Get the saved login status from shared preferences
   SharedPreferences prefs = await SharedPreferences.getInstance();
   bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
 
@@ -53,7 +50,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      // Set initial route based on login status
       initialRoute: isLoggedIn ? '/dashboard' : '/login',
       routes: {
         '/login': (context) => LoginPage(),
