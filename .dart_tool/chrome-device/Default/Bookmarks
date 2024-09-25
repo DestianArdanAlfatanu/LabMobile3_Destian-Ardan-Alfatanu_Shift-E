@@ -1,0 +1,51 @@
+{
+   "checksum": "bb6f2254addd00d9b63b742e4dcd8616",
+   "roots": {
+      "bookmark_bar": {
+         "children": [  ],
+         "date_added": "13371736741260036",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Favorites bar",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "date_added": "13342245563422155",
+            "date_last_used": "0",
+            "guid": "9a9a9612-c40d-402b-b4e1-19b2a206f6b5",
+            "id": "6",
+            "name": "Kalkulator Sederhana",
+            "show_icon": false,
+            "source": "sync",
+            "type": "url",
+            "url": "http://localhost/Prak%20Pemweb/PHP/kalkulator.php",
+            "visit_count": 0
+         } ],
+         "date_added": "13371736741260040",
+         "date_last_used": "0",
+         "date_modified": "13342245563422155",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other favorites",
+         "source": "unknown",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13371736741260043",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile favorites",
+         "source": "unknown",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CkEKHgiIgQISCL184yiSAQAAKg4QABgBIAAoBTAAOABAABIAKhhOK3pNY2kxV0RYUndDMVBYWTJLOFN3PT1IA6AGDBKOAQgBEokBChx5eEovNmZ2a2VjcjdrcDVFUXpCNHRXTHBkYkU9EiQ1ZGUwZjgxMy01YjQ2LTU4MWItODJlMy1iZTNmMjViODZhNjAYACAAKAAwwuKG+64wOIPnhvuuMECD54b7rjBKHGFSQ1dMZ2hGOWI1SW5xS0lEdnVKL2p2UWtGYz1aAGUAAAAAwj4CYAASrAEIBhKnAQocRGJIT0pTYUJDd0hwUERmYVVuNjJvdjdva3lBPRIkOWE5YTk2MTItYzQwZC00MDJiLWI0ZTEtMTliMmEyMDZmNmI1GAAgACgAMPiGp8KgMjiw44mOvDFAsOOJjrwxShxsMUkyOXBrK3hCRHhBUHdHYlZCMUtiVGFYZEE9Wh4iHEhHSTRTaW54Zk1MMUhvTTJCVXNPTjVGcEF0ST1l5qX7osI+AmAFEo4BCAISiQEKHFljU1RvbnZFU1B3cUNzNEwyY3JWaHY2OEw5OD0SJDgxZjQyOGQ3LTNiNTAtNTIyMy05YjIwLTY2YTJmOTI2ODIzNBgAIAAoADDC4ob7rjA4oueG+64wQKLnhvuuMEocb1BWa2h3QlJiVjY1S0NXUjIrSU9OSFdvT3U4PVoAZQAAAADCPgJgABKOAQgDEokBChxuamdEdTg4ZUNydlhwODZwRDdmSEdjcUZwODg9EiQ1YTlmMzQyYS1lMzdiLTUxMzQtYjk5YS1iYTM1YzNhNDNhZWYYACAAKAAwwuKG+64wOJ/ohvuuMECf6Ib7rjBKHHl6TkIwMWNuNTRBN2NSVTB1VCsvUGdtVHRVbz1aAGUAAAAAwj4CYAAwADgA",
+   "version": 1
+}
